@@ -1,0 +1,24 @@
+<div class="welcome">
+  
+  <div>
+
+    <select ng-model="name" name="" id="" ng-options="product.name for product in products">
+      <option value="">Name</option>
+    </select>
+
+    <select ng-model="gender" name="" id="" ng-options="gender.gender for gender in genders" ng-change="blah()">
+      <option value="">Gender</option>
+    </select>
+
+    <select ng-model="collection" name="" id="" ng-options="collection.name for collection in collections">
+      <option value="">Collection</option>
+    </select>
+
+  </div>
+
+  <div ng-repeat="product in products | filter: gender.gender | filter: name | filter: collection.name">
+    <p>{{product.name}}</p>
+    <img src="{{product.img}}" alt="">
+  </div>
+
+</div>
