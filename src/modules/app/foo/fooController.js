@@ -6,7 +6,7 @@ module.exports = /*@ngInject*/
       {
         name: 'Fin',
         gender: {
-          gender: 'Male',
+          gender: 'Male ',
           id: 1
         },
         collection: {
@@ -30,7 +30,7 @@ module.exports = /*@ngInject*/
       {
         name: 'Boba Fett',
         gender: {
-          gender: 'Male',
+          gender: 'Male ',
           id: 1
         },
         collection: {
@@ -42,7 +42,7 @@ module.exports = /*@ngInject*/
       {
         name: 'Jon Snow',
         gender: {
-          gender: 'Male',
+          gender: 'Male ',
           id: 1
         },
         collection: {
@@ -82,7 +82,7 @@ module.exports = /*@ngInject*/
 
     $scope.genders = [
       {
-        gender: 'Male',
+        gender: 'Male ',
         id: 1
       },
       {
@@ -90,13 +90,5 @@ module.exports = /*@ngInject*/
         id: 2
       }
     ]
-
-    $scope.blah = function() {
-      console.log($scope.gender);
-    }
-
-    $scope.filteredCollections = function() {
-      // return $scope.collections = $scope.backupStates.StateGroups[$scope.country.StateGroupID].items;
-    };
 
   };
